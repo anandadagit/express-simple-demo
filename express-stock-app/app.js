@@ -9,7 +9,7 @@ app.set('views', './views');
 
 app.use('/auth', authRoutes);
 app.use('/', siteRoutes);
-
+app.use(express.static('public'));
 
 
 

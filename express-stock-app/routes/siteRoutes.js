@@ -2,7 +2,7 @@ const express = require('express');
 const siteRouter = express.Router();
 
 siteRouter.get('/', (req, res) => {
-  res.render('index');
+  res.render('index', {title:'Home page'});
 });
 
 siteRouter.get('/aboutus', (req, res) => {
@@ -10,7 +10,7 @@ siteRouter.get('/aboutus', (req, res) => {
 });
 
 siteRouter.get('/contact', (req, res) => {
-  res.render('contactus');
+  res.render('contactus', {title:'Contact us'});
 });
 
 module.exports = siteRouter;
